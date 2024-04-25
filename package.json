@@ -1,0 +1,35 @@
+{
+  "name": "KittenGames",
+  "version": "1.0.0",
+  "description": "Welcome to the KittenGames, a simple but effective customizable game website.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "KittenGames",
+    "productName": "KittenGames",
+    "directories": {
+      "output": "builds"
+    },
+    "win": {
+      "icon": "src/icon.png"
+    },
+    "linux": {
+      "target": ["deb", "AppImage"],
+      "icon": "src/icon.png"  
+    },
+    "mac": {
+      "target": ["dmg", "zip"],
+      "icon": "src/icon.png"
+    }
+  }
+}
